@@ -6,6 +6,7 @@ do
 	dig -t A $line > temp.txt
 	if grep -q "NXDOMAIN" temp.txt; then
 		cat temp.txt
+		echo "--------------------------------------"
 	fi
 done
 
